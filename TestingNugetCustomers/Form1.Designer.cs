@@ -38,9 +38,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(338, 41);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(61, 20);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Clientes";
             // 
             // btnReadCustomers
             // 
