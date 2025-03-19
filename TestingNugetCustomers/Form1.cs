@@ -1,3 +1,5 @@
+using NugetCarsPGS.Models;
+using NugetCarsPGS.Repositories;
 using NugetCustomersJJLM.Models;
 using NugetCustomersJJLM.Services;
 
@@ -21,7 +23,17 @@ namespace TestingNugetCustomers
                 this.listBox1.Items.Add
                     (c.Contacto + ", " + c.Empresa);
             }
+        }
 
+        private void btnReadCars_Click(object sender, EventArgs e)
+        {
+            RepositoryCoches repo = new RepositoryCoches();
+            List<Coche> coches = repo.GetCoches();
+            foreach (Coche car in coches)
+            {
+                this.listBox1.Items.Add
+                    (car.Marca + ", " + car.Modelo);
+            }
         }
     }
 }

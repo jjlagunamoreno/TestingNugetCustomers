@@ -31,6 +31,7 @@
             label1 = new Label();
             btnReadCustomers = new Button();
             listBox1 = new ListBox();
+            btnReadCars = new Button();
             SuspendLayout();
             // 
             // label1
@@ -60,11 +61,22 @@
             listBox1.Size = new Size(425, 324);
             listBox1.TabIndex = 2;
             // 
+            // btnReadCars
+            // 
+            btnReadCars.Location = new Point(28, 264);
+            btnReadCars.Name = "btnReadCars";
+            btnReadCars.Size = new Size(151, 73);
+            btnReadCars.TabIndex = 3;
+            btnReadCars.Text = "btnReadCars";
+            btnReadCars.UseVisualStyleBackColor = true;
+            btnReadCars.Click += btnReadCars_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnReadCars);
             Controls.Add(listBox1);
             Controls.Add(btnReadCustomers);
             Controls.Add(label1);
@@ -79,5 +91,6 @@
         private Label label1;
         private Button btnReadCustomers;
         private ListBox listBox1;
+        private Button btnReadCars;
     }
 }

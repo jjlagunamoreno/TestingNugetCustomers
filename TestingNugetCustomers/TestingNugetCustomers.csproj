@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NugetCarsPGS" Version="1.0.0" />
+    <PackageReference Include="NugetCochesLunesjjlm" Version="1.0.0" />
     <PackageReference Include="NugetCustomersJJLM" Version="2.0.0" />
   </ItemGroup>
 
